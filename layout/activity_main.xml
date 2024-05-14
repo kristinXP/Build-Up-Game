@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/help_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <ImageView
+        android:layout_width="208dp"
+        android:layout_height="425dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="700dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="455dp"
+        android:contentDescription="bracket"
+        android:src="@drawable/boarderline" />
+
+    <ImageView
+        android:layout_width="208dp"
+        android:layout_height="425dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="460dp"
+        android:contentDescription="bracket"
+        android:src="@drawable/boarderline"
+        android:rotation="180"/>
+    <!--Human Hand-->
+
+    <!--Computer Hand-->
+
+    <!--Human Stacks-->
+
+    <RelativeLayout
+        android:id="@+id/human_hand"
+        android:layout_width="762dp"
+        android:layout_height="188dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="673dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="282dp"
+        android:gravity="center"
+        android:paddingTop="20sp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hand_B1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/b00"
+            android:contentDescription="Human Hand First Tile"
+            android:onClick="zeroSelected"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hand_B2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/hand_B1"
+            android:layout_toRightOf="@id/hand_B1"
+            android:background="@drawable/b00"
+            android:contentDescription="Human Hand Second Tile"
+            android:onClick="oneSelected"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hand_B3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/hand_B2"
+            android:layout_toRightOf="@id/hand_B2"
+            android:background="@drawable/b00"
+            android:contentDescription="Human Hand Third Tile"
+            android:onClick="twoSelected"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hand_B4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/hand_B3"
+            android:layout_toRightOf="@id/hand_B3"
+            android:background="@drawable/b00"
+            android:contentDescription="Human Hand Fourth Tile"
+            android:onClick="threeSelected"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hand_B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/hand_B4"
+            android:layout_toRightOf="@id/hand_B4"
+            android:background="@drawable/b00"
+            android:contentDescription="Human Hand Fifth Tile"
+            android:onClick="fourSelected"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hand_B6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/hand_B5"
+            android:layout_toRightOf="@id/hand_B5"
+            android:background="@drawable/b00"
+            android:contentDescription="Human Hand Sixth Tile"
+            android:onClick="fiveSelected"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/computer_hand"
+        android:layout_width="774dp"
+        android:layout_height="174dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="884dp"
+        android:gravity="center"
+        android:paddingTop="20sp">
+
+
+        <ImageView
+            android:id="@+id/hand_W1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:contentDescription="Computer First Tile"
+            android:src="@drawable/w00"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/hand_W2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/hand_W1"
+            android:layout_toRightOf="@id/hand_W1"
+            android:contentDescription="Computer Second Tile"
+            android:src="@drawable/w00"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/hand_W3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/hand_W2"
+            android:layout_toRightOf="@id/hand_W2"
+            android:contentDescription="Computer Third Tile"
+            android:src="@drawable/w00"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/hand_W4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/hand_W3"
+            android:layout_toRightOf="@id/hand_W3"
+            android:contentDescription="Computer FourthTile"
+            android:src="@drawable/w00"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/hand_W5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/hand_W4"
+            android:layout_toRightOf="@id/hand_W4"
+            android:contentDescription="Computer Fifth Tile"
+            android:src="@drawable/w00"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/hand_W6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/hand_W5"
+            android:layout_toRightOf="@id/hand_W5"
+            android:contentDescription="Computer Sixth Tile"
+            android:src="@drawable/w00"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+
+    <!--Computer Stacks-->
+
+    <RelativeLayout
+        android:id="@+id/human_stack"
+        android:layout_width="771dp"
+        android:layout_height="187dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="473dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="483dp"
+        android:gravity="center"
+        android:paddingTop="20sp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_B1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/b00"
+            android:contentDescription="Sixth Board Tile"
+            android:onClick="BoardSix" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_B2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/stack_B1"
+            android:layout_toRightOf="@id/stack_B1"
+            android:background="@drawable/b00"
+            android:contentDescription="Seventh Board Tile"
+            android:onClick="BoardSeven" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_B3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/stack_B2"
+            android:layout_toRightOf="@id/stack_B2"
+            android:background="@drawable/b00"
+            android:contentDescription="Eigth Board Tile"
+            android:onClick="BoardEight" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_B4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/stack_B3"
+            android:layout_toRightOf="@id/stack_B3"
+            android:background="@drawable/b00"
+            android:contentDescription="Nineth Board Tile"
+            android:onClick="BoardNine" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/stack_B4"
+            android:layout_toRightOf="@id/stack_B4"
+            android:background="@drawable/b00"
+            android:contentDescription="Tenth Board Tile"
+            android:onClick="BoardTen" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_B6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/stack_B5"
+            android:layout_toRightOf="@id/stack_B5"
+            android:background="@drawable/b00"
+            android:contentDescription="Eleventh Board Tile"
+            android:onClick="BoardEleven"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/computer_stack"
+        android:layout_width="778dp"
+        android:layout_height="192dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="679dp"
+        android:gravity="center"
+        android:paddingTop="20sp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_W1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/w00"
+            android:contentDescription="First Board Tile"
+            android:onClick="BoardZero" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_W2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/stack_W1"
+            android:layout_toRightOf="@id/stack_W1"
+            android:background="@drawable/w00"
+            android:contentDescription="Second Board Tile"
+            android:onClick="BoardOne" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_W3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/stack_W2"
+            android:layout_toRightOf="@id/stack_W2"
+            android:background="@drawable/w00"
+            android:contentDescription="Third Board Tile"
+            android:onClick="BoardTwo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_W4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/stack_W3"
+            android:layout_toRightOf="@id/stack_W3"
+            android:background="@drawable/w00"
+            android:contentDescription="Fourth Board Tile"
+            android:onClick="BoardThree" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_W5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toEndOf="@id/stack_W4"
+            android:layout_toRightOf="@id/stack_W4"
+            android:background="@drawable/w00"
+            android:contentDescription="Fourth Board Tile"
+            android:onClick="BoardFour" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stack_W6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/stack_W5"
+            android:layout_toRightOf="@id/stack_W5"
+            android:background="@drawable/w00"
+            android:contentDescription="Fifth Board Tile"
+            android:onClick="BoardFive" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/small_buttons"
+        android:layout_width="214dp"
+        android:layout_height="270dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="873dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_button"
+            android:layout_width="159dp"
+            android:layout_height="88dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="174dp"
+            android:background="@drawable/bluebutton"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:onClick="Save"
+            android:textSize="40sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/help"
+            android:layout_width="159dp"
+            android:layout_height="88dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/bluebutton"
+            android:text="HELP"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_width="159dp"
+            android:layout_height="88dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/bluebutton"
+            android:text="Pass"
+            android:onClick="Pass"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/human_color_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="384dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="213dp"
+        android:text="Human"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/play_buttons"
+        android:layout_width="272dp"
+        android:layout_height="227dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="889dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginBottom="27dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/play_tile"
+            android:layout_width="194dp"
+            android:layout_height="134dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bluebutton"
+            android:text="PLAY"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cpu_color_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="354dp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="1062dp"
+        android:text="Computer"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/cpu_score"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="628dp"
+        android:layout_marginBottom="1080dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/cpu_score_label"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="766dp"
+        android:layout_marginBottom="1080dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Score:"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/human_score"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="628dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/human_score_label"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="766dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Score:"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/turn"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="591dp"-->
+<!--        android:layout_marginBottom="26dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="left"-->
+<!--        android:text=""-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="35sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/turn_label"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="682dp"-->
+<!--        android:layout_marginBottom="26dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="left"-->
+<!--        android:text="Turn:"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="35sp" />-->
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="348dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="542dp"
+        android:layout_marginBottom="85dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/board_text"
+        android:layout_width="146dp"
+        android:layout_height="122dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="754dp"
+        android:layout_marginBottom="604dp"
+        android:gravity="left"
+        android:rotation="-90"
+        android:text="BOARD"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <Switch
+        android:id="@+id/switchCPU"
+        android:layout_width="130dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="1078dp"
+        android:scaleType="center"
+        android:text="CPU Tile Visibility"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/end_of_round"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <TextView
+        android:id="@+id/round_winner_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="991dp"
+        android:text="ROUND WINNER"
+        android:textColor="@color/purple_200"
+        android:textSize="100sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/round_winner"
+        android:layout_width="700dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="860dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/purple_200"
+        android:textSize="100sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/cpu_EoR"
+        android:layout_width="771dp"
+        android:layout_height="187dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="633dp"
+        android:gravity="center"
+        android:paddingTop="20sp">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="513dp"
+            android:layout_marginBottom="113dp"
+            android:text="Computer"
+            android:textColor="@color/purple_500"
+            android:textSize="40sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="471dp"
+            android:layout_marginBottom="56dp"
+            android:text="Score:"
+            android:textColor="@color/purple_500"
+            android:textSize="35sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/computer_score_round"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="350dp"
+            android:layout_marginBottom="56dp"
+            android:text="0"
+            android:textColor="@color/purple_500"
+            android:textSize="35sp">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/human_EoR"
+        android:layout_width="771dp"
+        android:layout_height="187dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="469dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="487dp"
+        android:gravity="center"
+        android:paddingTop="20sp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="613dp"
+            android:layout_marginBottom="113dp"
+            android:text="Human"
+            android:textColor="@color/purple_500"
+            android:textSize="40sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="471dp"
+            android:layout_marginBottom="56dp"
+            android:text="Score:"
+            android:textColor="@color/purple_500"
+            android:textSize="35sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/human_score_round"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="350dp"
+            android:layout_marginBottom="56dp"
+            android:text="0"
+            android:textColor="@color/purple_500"
+            android:textSize="35sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/otter1"
+        android:layout_width="334dp"
+        android:layout_height="247dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="505dp"
+        app:srcCompat="@drawable/otter1" />
+
+    <ImageView
+        android:id="@+id/otter2"
+        android:layout_width="411dp"
+        android:layout_height="277dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/otter2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ok_EoR"
+        android:layout_width="190dp"
+        android:layout_height="73dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="554dp"
+        android:layout_marginBottom="299dp"
+        android:background="@drawable/purple_button"
+        android:text="YES"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/no_EoR"
+        android:layout_width="190dp"
+        android:layout_height="73dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="223dp"
+        android:layout_marginBottom="308dp"
+        android:background="@drawable/purple_button"
+        android:text="NO"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="227dp"
+        android:layout_marginBottom="397dp"
+        android:text="Play another Round?"
+        android:textSize="50sp"
+        android:textColor="@color/purple_500"/>
+
+    <TextView
+        android:id="@+id/end_round_reason"
+        android:layout_width="256dp"
+        android:layout_height="216dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="622dp"
+        android:layout_marginBottom="63dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/purple_500"
+        android:textSize="35sp">
+
+    </TextView>
+
+
+</RelativeLayout>
